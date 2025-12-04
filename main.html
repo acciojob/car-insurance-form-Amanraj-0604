@@ -1,16 +1,65 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Car Insurance Registration</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
 
+  <form action="" method="post" novalidate>
+
+    <!-- Name -->
+    <label for="name">Name</label><br>
+    <input type="text" id="name" name="name" placeholder="Your full name" required><br><br>
+
+    <!-- Email -->
+    <label for="email">Email</label><br>
+    <input type="email" id="email" name="email" placeholder="example@example.com" required><br><br>
+
+    <!-- Gender (radio buttons) -->
+    <label>Gender</label><br>
+    <input type="radio" id="gender_m" name="gender" value="male" required>
+    <label for="gender_m">Male</label>
+
+    <input type="radio" id="gender_f" name="gender" value="female">
+    <label for="gender_f">Female</label>
+
+    <input type="radio" id="gender_o" name="gender" value="other">
+    <label for="gender_o">Other</label>
+    <br><br>
+
+    <!-- Car Brands (dropdown) -->
+    <label for="cars">Car Brands</label><br>
+    <select id="cars" name="cars">
+      <option value="" disabled selected>-- Please choose an option --</option>
+      <option value="BMW">BMW</option>
+      <option value="Audi">Audi</option>
+      <option value="Mercedez">Mercedez</option>
+    </select>
+    <br><br>
+
+    <!-- Car Age -->
+    <label for="carage">Car Age (years)</label><br>
+    <input type="number" id="carage" name="carage" min="0" placeholder="e.g. 3" required>
+    <br><br>
+
+    <!-- Date of Purchase -->
+    <label for="dop">Date of Purchase (DOP)</label><br>
+    <input type="date" id="dop" name="dop" required>
+    <br><br>
+
+    <!-- Password -->
+    <label for="password">Password</label><br>
+    <input type="password" id="password" name="password" placeholder="Password" required>
+    <br><br>
+
+    <!-- Submit -->
+    <button type="submit">Register</button>
+
+  </form>
+
+  <script type="text/javascript" src="./script.js"></script>
 </body>
-
 </html>
